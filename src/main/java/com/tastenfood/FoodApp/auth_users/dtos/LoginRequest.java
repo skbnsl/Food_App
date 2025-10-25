@@ -1,0 +1,15 @@
+package com.tastenfood.FoodApp.auth_users.dtos;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+public class LoginRequest {
+
+    @NotBlank(message = "email is required")
+    @Email(message = "invalid email format")
+    private String email;
+
+    @NotBlank(message = "email is required")
+    private String password;
+
+}

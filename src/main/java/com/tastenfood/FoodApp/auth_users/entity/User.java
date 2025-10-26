@@ -1,5 +1,6 @@
 package com.tastenfood.FoodApp.auth_users.entity;
 
+import com.tastenfood.FoodApp.cart.entity.Cart;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

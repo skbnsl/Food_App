@@ -32,5 +32,5 @@ public class OrderDTO {
 
     private UserDTO user; //customer who is making order
 
-    private List<com.tastenfood.FoodApp.Order.dtos.OrderItemDTO> orderItems;
+    private List<OrderItemDTO> orderItems;
 }

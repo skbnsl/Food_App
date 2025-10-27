@@ -4,6 +4,7 @@ import com.stripe.model.InvoicePayment;
 import com.tastenfood.FoodApp.auth_users.entity.User;
 import com.tastenfood.FoodApp.enums.OrderStatus;
 import com.tastenfood.FoodApp.enums.PaymentStatus;
+import com.tastenfood.FoodApp.payment.entity.Payment;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

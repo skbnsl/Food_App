@@ -4,10 +4,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.tastenfood.FoodApp.role.dtos.RoleDTO;
 import jakarta.mail.Multipart;
 import lombok.Data;
 import org.springframework.web.multipart.MultipartFile;
 import software.amazon.awssdk.services.s3.endpoints.internal.Value;
+
+import java.util.List;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -28,7 +31,7 @@ public class UserDTO {
 
     private String address;
 
-    private List<RoleDto> roles;
+    private List<RoleDTO> roles;
 
     private MultipartFile imageFile;
 

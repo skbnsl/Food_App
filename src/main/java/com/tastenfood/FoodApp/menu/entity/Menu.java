@@ -1,6 +1,8 @@
 package com.tastenfood.FoodApp.menu.entity;
 
 import com.tastenfood.FoodApp.category.entity.Category;
+import com.tastenfood.FoodApp.order.entity.OrderItem;
+import com.tastenfood.FoodApp.review.entity.Review;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

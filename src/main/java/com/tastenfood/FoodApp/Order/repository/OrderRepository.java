@@ -1,8 +1,9 @@
-package com.tastenfood.FoodApp.Order.repository;
+package com.tastenfood.FoodApp.order.repository;
 
-import com.tastenfood.FoodApp.Order.entity.Order;
+
 import com.tastenfood.FoodApp.auth_users.entity.User;
 import com.tastenfood.FoodApp.enums.OrderStatus;
+import com.tastenfood.FoodApp.order.entity.Order;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

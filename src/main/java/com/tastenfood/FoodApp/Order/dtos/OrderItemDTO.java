@@ -1,4 +1,4 @@
-package com.tastenfood.FoodApp.Order.dtos;
+package com.tastenfood.FoodApp.order.dtos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

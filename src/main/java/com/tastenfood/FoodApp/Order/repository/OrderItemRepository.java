@@ -1,6 +1,7 @@
-package com.tastenfood.FoodApp.Order.repository;
+package com.tastenfood.FoodApp.order.repository;
 
-import com.tastenfood.FoodApp.Order.entity.OrderItem;
+
+import com.tastenfood.FoodApp.order.entity.OrderItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

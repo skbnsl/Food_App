@@ -1,4 +1,4 @@
-package com.tastenfood.FoodApp.Order.entity;
+package com.tastenfood.FoodApp.order.entity;
 
 import com.stripe.model.InvoicePayment;
 import com.tastenfood.FoodApp.auth_users.entity.User;

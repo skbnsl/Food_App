@@ -1,36 +1,42 @@
-package com.tastenfood.FoodApp.order.dtos;
-
+package com.tastenfood.FoodApp.payment.dtos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.tastenfood.FoodApp.auth_users.dtos.UserDTO;
-import com.tastenfood.FoodApp.enums.OrderStatus;
+import com.tastenfood.FoodApp.enums.PaymentGateway;
 import com.tastenfood.FoodApp.enums.PaymentStatus;
+import com.tastenfood.FoodApp.order.dtos.OrderDTO;
 import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Builder
-public class OrderDTO {
+public class PaymentDTO {
 
     private Long id;
 
-    private LocalDateTime orderDate;
+    private Long orderId;
 
-    private BigDecimal totalAmount;
-
-    private OrderStatus orderStatus;
+    private BigDecimal amount;
 
     private PaymentStatus paymentStatus;
 
-    private UserDTO user; //customer who is making order
+    private String transactionId;
 
-    private List<com.tastenfood.FoodApp.Order.dtos.OrderItemDTO> orderItems;
+    private PaymentGateway paymentGateway;
+
+    private String failureReason;
+
+    private boolean success;
+
+    private LocalDateTime paymentDate;
+
+    private OrderDTO order;
+    private UserDTO user;
+
 }

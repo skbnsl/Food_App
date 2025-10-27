@@ -1,5 +1,6 @@
 package com.tastenfood.FoodApp.auth_users.dtos;
 
+import com.tastenfood.FoodApp.role.entity.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

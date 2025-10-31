@@ -11,14 +11,14 @@ public interface ReviewRepository extends JpaRepository<Review, Long> {
 
     List<Review> findByMenuIdOrderByIdDesc(Long menuId);
 
-    @Query("select avg(r.rating) from review r where e.menu.id = :menuId" )
+    @Query("select avg(r.rating) from Review r where r.menu.id = :menuId" )
     Double calculateAverageRatingByMenuId(@Param("menuId") Long menuId);
 
 
-    @Query("select case when count(r) > 0 then true else false" +
-        " from review r " +
-    "where r.user.id = :userId and r.menu.id = :menuId and r.order.id = :orderId")
-    boolean existsByUserIdAndMenuIdAndOrderId(
+    @Query("SELECT CASE WHEN COUNT(r) > 0 THEN true ELSE false END" +
+            " FROM Review r " +
+            "WHERE r.user.id = :userId AND r.menu.id = :menuId AND r.orderId = :orderId")
+    boolean existsByUserIdAndMenuIdAndFoodOrderId(
             @Param("userId") Long userId,
             @Param("menuId") Long menuId,
             @Param("orderId") Long orderId

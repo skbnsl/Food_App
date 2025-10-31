@@ -3,6 +3,7 @@ package com.tastenfood.FoodApp.menu.dtos;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.tastenfood.FoodApp.category.entity.Category;
+import com.tastenfood.FoodApp.review.dtos.ReviewDTO;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

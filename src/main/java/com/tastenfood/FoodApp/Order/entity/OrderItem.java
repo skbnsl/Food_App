@@ -1,4 +1,4 @@
-package com.tastenfood.FoodApp.order.entity;
+package com.tastenfood.FoodApp.Order.entity;
 
 import com.tastenfood.FoodApp.menu.entity.Menu;
 import jakarta.persistence.*;

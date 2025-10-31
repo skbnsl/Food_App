@@ -1,5 +1,6 @@
 package com.tastenfood.FoodApp.payment.entity;
 
+import com.tastenfood.FoodApp.Order.entity.Order;
 import com.tastenfood.FoodApp.auth_users.entity.User;
 import com.tastenfood.FoodApp.enums.PaymentGateway;
 import com.tastenfood.FoodApp.enums.PaymentStatus;
@@ -11,7 +12,6 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import com.tastenfood.FoodApp.order.entity.*;
 
 @Entity
 @Data

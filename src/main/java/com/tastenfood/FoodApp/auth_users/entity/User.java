@@ -1,7 +1,7 @@
 package com.tastenfood.FoodApp.auth_users.entity;
 
+import com.tastenfood.FoodApp.Order.entity.Order;
 import com.tastenfood.FoodApp.cart.entity.Cart;
-import com.tastenfood.FoodApp.order.entity.Order;
 import com.tastenfood.FoodApp.payment.entity.Payment;
 import com.tastenfood.FoodApp.review.entity.Review;
 import com.tastenfood.FoodApp.role.entity.Role;

@@ -1,10 +1,13 @@
 package com.tastenfood.FoodApp.category.entity;
 
+import com.tastenfood.FoodApp.menu.entity.Menu;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -21,9 +24,8 @@ public class Category {
     @Column(unique = true)
     private String name;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
     private String description;
 
-
-
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    private List<Menu> menus;
 }

@@ -18,7 +18,6 @@ import java.util.List;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Builder
 public class MenuDTO {
 
     private Long id;

@@ -1,4 +1,4 @@
-package com.tastenfood.FoodApp.order.dtos;
+package com.tastenfood.FoodApp.Order.dtos;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -17,7 +17,6 @@ import java.util.List;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Builder
 public class OrderDTO {
 
     private Long id;

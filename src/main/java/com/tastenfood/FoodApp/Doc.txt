@@ -10,7 +10,7 @@ security:
 (5)CorsConfig
 
 
-EmailSender-> MimeMessage message = javaMailSender.createMimeMessage();
+EmailSender->             MimeMessage message = javaMailSender.createMimeMessage();
                           MimeMessageHelper helper = new MimeMessageHelper(
                                   message,
                                   MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,

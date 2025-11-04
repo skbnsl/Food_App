@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Builder
 public class NotificationDTO {
 
     private Long id;

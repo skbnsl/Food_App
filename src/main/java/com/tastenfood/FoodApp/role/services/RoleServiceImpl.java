@@ -29,6 +29,7 @@ public class RoleServiceImpl implements RoleService{
        /* if(roleRepository.findByName(roleDTO.getName())){
             throw new NotFoundException("Role does not exists!");
         }*/
+        roleDTO.setName(roleDTO.getName().toUpperCase());
         if(roleRepository.findByName(roleDTO.getName()).isPresent()){
             throw new BadRequestException("Role with name already exists!");
         }
@@ -46,7 +47,7 @@ public class RoleServiceImpl implements RoleService{
     public Response<RoleDTO> updateRole(RoleDTO roleDTO) {
         Role existingRole = roleRepository.findById(roleDTO.getId())
                 .orElseThrow(() -> new NotFoundException("Role Not Found!"));
-
+        roleDTO.setName(roleDTO.getName().toUpperCase());
         if(roleRepository.findByName(roleDTO.getName()).isPresent()){
             throw new BadRequestException("Role with name already exists!");
         }

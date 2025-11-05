@@ -103,7 +103,7 @@ public class UserServiceImpl implements UserService {
             }
             user.setEmail(userDTO.getEmail());
         }
-        user.setEmail(userDTO.getEmail());
+        user.setEmail(user.getEmail());
 
         //update the user
         userRepository.save(user);

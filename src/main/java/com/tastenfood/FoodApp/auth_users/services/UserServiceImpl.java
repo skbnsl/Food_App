@@ -82,7 +82,7 @@ public class UserServiceImpl implements UserService {
             //delete old image in cloud if exists
             if(profileUrl!=null && !profileUrl.isEmpty()){
                 String keyName = profileUrl.substring(profileUrl.lastIndexOf("/")+1);
-                awss3Service.deleteFile("/profile"+keyName);
+                awss3Service.deleteFile("profile/"+keyName);
                 log.info("Deleted old profile image from s3: {}", keyName);
             }
             //upload new image

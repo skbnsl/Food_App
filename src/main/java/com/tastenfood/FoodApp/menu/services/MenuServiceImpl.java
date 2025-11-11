@@ -149,7 +149,8 @@ public class MenuServiceImpl implements MenuService{
 
     @Override
     public Response<List<MenuDTO>> getMenus(Long categoryId, String search) {
-        log.info("Inside getMenus(): categoryId: {} ,search {}",categoryId.toString(), search);
+        //remove toString because categoryId is null in logger, then it is throwing exception
+        log.info("Inside getMenus(): categoryId: {} ,search {}",categoryId, search);
         Specification<Menu> spec = buildSpecification(categoryId,search);
 
         Sort sort = Sort.by(Sort.Direction.DESC, "id");

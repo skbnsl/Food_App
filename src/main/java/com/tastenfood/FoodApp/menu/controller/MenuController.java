@@ -53,7 +53,7 @@ public class MenuController {
     }
 
     @GetMapping
-    public ResponseEntity<Response<List<MenuDTO>>> getMenuById(@RequestParam(required = false) Long categoryId,
+    public ResponseEntity<Response<List<MenuDTO>>> getMenus(@RequestParam(required = false) Long categoryId,
                                                               @RequestParam(required = false) String search){
         return ResponseEntity.ok(menuService.getMenus(categoryId,search));
     }

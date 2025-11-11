@@ -36,7 +36,7 @@ public class SecurityFilter {
         httpSecurity.csrf(AbstractHttpConfigurer::disable)
                 .cors(Customizer.withDefaults())
                 .exceptionHandling(ex -> ex.accessDeniedHandler(customAccessDenialHandler).authenticationEntryPoint(customAuthenticationEntryPoint))
-                .authorizeHttpRequests(req -> req.requestMatchers("/api/auth/**","/api/categories/**","/api/reviews/**","/api/upload/**","/api/roles/**").permitAll()
+                .authorizeHttpRequests(req -> req.requestMatchers("/api/auth/**","/api/categories/**","/api/reviews/**","/api/upload/**","/api/roles/**","/api/menu/**").permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(mag -> mag.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class);
